@@ -10,6 +10,9 @@
     ,
     // Add the IDs of extensions you want installed when the container is created.
     "customizations": {
+        "features": {
+            "ghcr.io/devcontainers/features/aws-cli:1": {}
+        },
 
         "vscode": {
             "extensions": [
@@ -21,21 +24,13 @@
             "openFiles": [
                 "codespace.md"
             ]
-            // "repositories": {
-            //     "github.com/microsoft/vscode-dev-containers": {
-            //         "clone":
-            //         {
-            //             "checkout": "main"
-            //         }
-            //     }
-            // }
         }
     }
     ,
     // "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
 
     "hostRequirements": {
-        "cpus": 4,
+        "cpus": 2,
         "memory": "8gb",
         "storage": "32gb"
     }
