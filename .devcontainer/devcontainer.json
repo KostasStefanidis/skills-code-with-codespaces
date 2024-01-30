@@ -3,7 +3,7 @@
     "name": "Codespace for Skills!",
     // Use the base codespace image
     "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
-  
+
     "remoteUser": "codespace",
     "overrideCommand": false
 
@@ -16,14 +16,14 @@
                 "GitHub.copilot"
             ]
         },
-        
+
         "codespaces": {
             "openFiles": [
                 "codespace.md"
             ]
             // "repositories": {
             //     "github.com/microsoft/vscode-dev-containers": {
-            //         "clone": 
+            //         "clone":
             //         {
             //             "checkout": "main"
             //         }
@@ -32,5 +32,12 @@
         }
     }
     ,
-    "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md"
+    // "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
+
+    "hostRequirements": {
+        "cpus": 4,
+        "memory": "8gb",
+        "storage": "32gb"
+    }
+
 }
